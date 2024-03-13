@@ -1,0 +1,56 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+}
+
+.picture {
+  position: relative;
+  width: 35vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.picture img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form_container h1 {
+  margin-bottom: 20px;
+}
+
+.form form {
+  display: flex;
+}
+
+.left_side,
+.right_side {
+  flex: 1;
+}
+
+.left_side {
+  margin-right: 40px; /* Adjust spacing as needed */
+}
+
+.right_side {
+  margin-left: 40px; /* Adjust spacing as needed */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}

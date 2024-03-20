@@ -45,14 +45,14 @@ body {
 
 /* Styling for the logo */
 .insideOfPicture .TOP {
-  width: 100px; /* Adjust the width as needed */
+  width: 300px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
 }
 
 /* Styling for the restaurant name */
 .restaurantName {
   margin-top: 10px; /* Adjust the margin as needed */
-  font-size: 20px; /* Adjust the font size as needed */
+  font-size: 40px; /* Adjust the font size as needed */
 }
 
 /* Container for the form */
@@ -102,7 +102,24 @@ input {
   border-radius: 5px;
   box-sizing: border-box;
 }
-
 button {
+  display: inline-block;
+  padding: 11px 21px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-decoration: none;
   background-color: #dd710cde;
+  border: 2px solid #dd710cde;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+  overflow: hidden;
+}
+
+button:hover {
+  background-color: #ff9400de;
+  border-color: #ff9400de;
+  transform: scale(1.05);
 }

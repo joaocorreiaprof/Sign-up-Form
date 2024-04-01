@@ -1,117 +1,75 @@
-/* Define custom font */
 @font-face {
-  font-family: "Norse-Bold";
-  src: url("fonts/Norse-Bold.otf") format("opentype");
+  font-family: Norse-Bold;
+  src: url(.../fonts/Norse-Bold.otf);
 }
 
-/* General styling */
-html,
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  background: linear-gradient(to bottom, #010816, #451d00, #020101);
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Norse-Bold, sans-serif;
 }
 
-.picture,
-.mainContainer {
+.main {
   display: flex;
   flex-direction: row;
   width: 100vw;
-}
-
-.picture {
-  position: relative;
-  width: 50vw;
   height: 100vh;
 }
 
-.picture img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.left {
+  background-image: url(./images/volkan-vardar-1H30uRC1plc-unsplash.jpg);
+  width: 35vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
-/* Container for the form */
-.mainContainer {
+.right {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  justify-content: space-evenly;
-  padding: 2vw;
+  background-color: #fafafa;
+  width: 65vw;
 }
 
-.formOfContainer form {
+.first {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 25vh;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.second {
+  background-color: white;
+  height: 33vh;
+}
+
+.form-main-div {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.form-div {
   display: flex;
   flex-direction: column;
-}
-
-.directions {
-  display: flex;
-}
-
-.left_side,
-.right_side {
-  flex: 1;
-}
-
-.left_side {
-  margin-right: 40px;
-}
-
-.right_side {
-  margin-left: 40px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 input {
-  width: 80%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #cccccc;
+  width: 200px;
+  border: 1px solid #e5e7eb;
+  height: 25px;
   border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 18px;
 }
 
-.submition {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 8vh;
+input:focus {
+  border: 3px solid blue; /*if i change to 2, can't see the border color. FIX IT LATER*/
 }
 
-button {
-  display: inline-block;
-  padding: 11px 21px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  background-color: #dd710cde;
-  border: 2px solid #dd710cde;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
-  overflow: hidden;
-}
-
-button:hover {
-  background-color: #ff9400de;
-  border-color: #ff9400de;
-  transform: scale(1.05);
-}
-
-.logIn {
-  margin-top: 4vh;
+input:invalid {
+  border: 1px solid red;
 }

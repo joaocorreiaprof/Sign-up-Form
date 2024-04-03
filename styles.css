@@ -22,6 +22,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .right {
@@ -41,8 +43,12 @@ body {
 }
 
 .second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: white;
   height: 33vh;
+  box-shadow: 2px 5px #e5e7eb;
 }
 
 .form-main-div {
@@ -67,9 +73,54 @@ input {
 }
 
 input:focus {
-  border: 3px solid blue; /*if i change to 2, can't see the border color. FIX IT LATER*/
+  border: 1px solid blue; /*if i change to 2, can't see the border color. FIX IT LATER*/
 }
 
 input:invalid {
   border: 1px solid red;
+}
+
+label {
+  font-size: 16px;
+  color: #2a2a2b;
+}
+
+#error {
+  color: red;
+  font-size: 12px;
+  margin: 1px;
+}
+
+.btn-green {
+  background-color: rgb(215 104 0);
+  color: white;
+  border: 1px solid rgb(215 104 0);
+  border-radius: 10px;
+  height: 40px;
+  width: 175px;
+  font-size: medium;
+  font-weight: bolder;
+  box-shadow: 2px 5px #e5e7eb;
+}
+
+.third {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.hyperlink {
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+a {
+  color: rgb(215 104 0);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.forImage {
+  height: 40vh;
+  display: flex;
+  align-items: center;
 }

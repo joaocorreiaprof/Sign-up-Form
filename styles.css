@@ -124,3 +124,18 @@ a {
   display: flex;
   align-items: center;
 }
+
+.semi-transparent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  font-family: Norse-Bold, sans-serif;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: Norse-Bold;
+}
